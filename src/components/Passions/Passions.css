@@ -1,0 +1,92 @@
+.passions-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%; 
+    font-family: 'Raleway', sans-serif;
+    background: #262a2b; 
+    position: relative;
+    z-index: 2;
+    color: #b7b7b7;
+}
+
+#passions-title {
+	margin: 5%;
+}
+
+.passion-type {
+	font-size: 7vw;
+	margin: 0;
+	position: absolute;
+	opacity: 0.2;
+	top: 50px;
+	right: 10px;
+	transition: all 0.3s ease-in-out;
+}
+
+#passions-margin {
+	height: 15vh;
+}
+
+.description {
+	display: inline-block;
+	width: 40%;
+	min-width: 200px;
+	padding: 80px 20px 40px;
+	position: relative;
+	vertical-align: top;
+	margin: 3%;
+	font-family: 'helvetica', san-serif;
+	min-height: 25vh;
+	background: #262a2b;
+	border: 1px solid #252727;
+	text-align: justify;
+	user-select: none;
+}
+
+.description p {
+	font-size: 18px;
+	font-weight: 500;
+	line-height: 18px;
+	color: #b7b7b7;
+	margin-top: 10%;
+}
+
+.description:hover .passion-type {
+	top: 0px;
+	opacity: 0.6;
+}
+
+.description:before {
+	content: '';
+	position: absolute;
+	top: -2px;
+	left: -2px;
+	right: -2px;
+	bottom: -2px;
+	z-index: -1;
+	background: red;
+	transform: skew(2deg, 2deg);
+}
+
+.description:after {
+	content: '';
+	position: absolute;
+	width: 40%;
+	height: 100%;
+	left: 0;
+	top: 0;
+	background: rgba(255, 255, 255, 0.02);
+}
+
+.description:before {
+	background: #EDD1A1;
+    background: linear-gradient(to right, #aaa9ac, #EDD1A1);
+}
+
+@media screen and (max-width: 1000px) {
+	.description {
+		width: 70%;
+	}
+}
