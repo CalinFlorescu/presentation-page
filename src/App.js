@@ -9,13 +9,13 @@ import './App.css';
 
 function App() {
   return (
-    <React.Fragment className="app-container">
+    <div className="app-container">
       <Greetings />
       <Passions />
       <Resume />
       <Contact />
       <Copyright />
-    </React.Fragment>
+    </div>
   );
 }
 

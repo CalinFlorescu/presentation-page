@@ -107,10 +107,5 @@ export const contacts = [
         name: 'github',
         link: 'https://github.com/CalinFlorescu',
         image: 'github.png'
-    },
-    {
-        name: 'gmail',
-        link: 'calinflorescu3@gmail.com',
-        image: 'gmail.png'
     }
 ]

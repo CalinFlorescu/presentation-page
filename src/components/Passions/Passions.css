@@ -12,7 +12,9 @@
 }
 
 #passions-title {
-	margin: 5%;
+	margin-top: 10%;
+	text-align: center;
+	font-size: 40px;
 }
 
 .passion-type {
@@ -36,7 +38,7 @@
 	padding: 80px 20px 40px;
 	position: relative;
 	vertical-align: top;
-	margin: 3%;
+	margin-top: 7%;
 	font-family: 'helvetica', san-serif;
 	min-height: 25vh;
 	background: #262a2b;
@@ -88,5 +90,14 @@
 @media screen and (max-width: 1000px) {
 	.description {
 		width: 70%;
+		margin-bottom: 20%;
+	}
+
+	#passions-title {
+		margin: 10%;
+	}
+
+	.passion-type {
+		font-size: 7vh;
 	}
 }

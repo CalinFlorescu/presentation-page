@@ -8,7 +8,7 @@ export default function Resume() {
         <div className="resume-container">
             <h1 id="resume-title">What is my experience?</h1>
             {experiences.map(experience => (
-                <div className="resume-item">
+                <div key={experience.name} className="resume-item">
                     <div className="resume-item-content">
                         <a target="#" href={experience.link}>
                             <h2>{experience.name}</h2>
@@ -18,7 +18,7 @@ export default function Resume() {
                         During my time with the company, I've: 
                         <ul>
                             {experience.responsabilities.map(responsability => (
-                                <li>{responsability}</li>
+                                <li key={responsability}>{responsability}</li>
                             ))}
                         </ul>
                     </div>

@@ -8,7 +8,7 @@ export default function Passions() {
         <div className="passions-container">
             <h1 id="passions-title">What should you know about me?</h1>
             {passions.map(passion => (
-                <div className="description">
+                <div key={passion.name} className="description">
                     <h3 className="passion-type">{passion.name}</h3>
                     <p>
                         {passion.description}
